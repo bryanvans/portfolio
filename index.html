@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bryan Evans Simamora – Junior Software QA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--surface:#fff;--ink:#17212e;--muted:#5a6676;--line:#d9dee6;--accent:#2f4b7c;--pass:#1f7a4d;--fail:#b83a32;--passbg:#e1f3ea;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121821;--surface:#1b2431;--ink:#e8edf4;--muted:#9aa7b8;--line:#2d394a;--accent:#8fb0ea;--pass:#5fd09a;--fail:#ff8a80;--passbg:#183a2b}}
+:root[data-theme="dark"]{--bg:#121821;--surface:#1b2431;--ink:#e8edf4;--muted:#9aa7b8;--line:#2d394a;--accent:#8fb0ea;--pass:#5fd09a;--fail:#ff8a80;--passbg:#183a2b}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;padding:1.25rem 0;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:2.5rem;align-items:center;padding:3rem 0 4rem}
+.hero h1{font-size:clamp(2.4rem,6vw,3.8rem);font-weight:700;letter-spacing:-.02em}
+.hero p.role{font-size:1.2rem;color:var(--muted);margin:.75rem 0 1.5rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:500}
+.btn.main{background:var(--ink);color:var(--bg)}
+.tc{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:.95rem}
+.tc header{display:flex;justify-content:space-between;align-items:center;padding:.7rem 1rem;border-bottom:1px solid var(--line);font-weight:500}
+.tc dl{margin:0;padding:.25rem 1rem 1rem}
+.tc dt{color:var(--muted);font-size:.85rem;margin-top:.8rem}
+.tc dd{margin:.1rem 0 0}
+.pill{padding:.15rem .7rem;border-radius:99px;background:var(--passbg);color:var(--pass);font-weight:500;font-size:.85rem}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:1.9rem;margin-bottom:1.5rem}
+.about{max-width:42rem}
+.item{display:grid;grid-template-columns:11rem 1fr;gap:1rem 2rem;margin-bottom:2rem}
+.item .when{color:var(--muted);font-size:.95rem}
+.item h3{font-size:1.25rem;margin-bottom:.2rem}
+.item .sub{color:var(--muted);margin:0 0 .6rem}
+ul{margin:0;padding-left:1.2rem}li{margin-bottom:.4rem;max-width:46rem}
+.stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.25rem}
+.stack div{border-left:3px solid var(--accent);padding-left:1rem}
+.stack h3{font-size:1.05rem;margin-bottom:.3rem}
+.stack p{margin:0;color:var(--muted)}
+.tag{display:inline-block;margin:.2rem .3rem .2rem 0;padding:.15rem .7rem;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:.92rem}
+footer{border-top:1px solid var(--line);padding:2.5rem 0 3rem;color:var(--muted)}
+footer a{margin-right:1.25rem}
+@media (max-width:720px){.hero{grid-template-columns:1fr;padding-top:1.5rem}.item{grid-template-columns:1fr;gap:.3rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<div class="hero">
+  <div>
+    <h1>Bryan Evans Simamora</h1>
+    <p class="role">Junior Software QA, focused on manual testing.</p>
+    <div class="btns">
+      <a class="btn main" href="mailto:bryanaja92@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/bryan-evans-simamora-823133245" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/bryanvans" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <aside class="tc" aria-label="Test case: hire a QA">
+    <header><span>TC-001: Hire a junior QA</span><span class="pill">Pass</span></header>
+    <dl>
+      <dt>Precondition</dt><dd>Team needs careful, detail-oriented testing</dd>
+      <dt>Steps</dt><dd>Review internship experience, test cases and bug reports</dd>
+      <dt>Expected result</dt><dd>Defects found early and documented clearly</dd>
+      <dt>Actual result</dt><dd>2 apps tested at PT. Xtend Indonesia, 2 web projects tested with Katalon</dd>
+    </dl>
+  </aside>
+</div>
+</div>
+
+<section id="about"><div class="wrap">
+  <h2>About</h2>
+  <p class="about">I'm an Information Systems graduate from Institut Teknologi Del, looking for a Junior or Manual QA role. During my Software Quality Assurance internship at PT. Xtend Indonesia I ran functional, non-functional and system testing, wrote test cases and reported bugs. I also hold an advanced SQL certification from HackerRank.</p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="item">
+    <div class="when">June – August 2025</div>
+    <div>
+      <h3>Software Quality Assurance Intern</h3>
+      <p class="sub">PT. Xtend Indonesia</p>
+      <ul>
+        <li>Ran manual functional, non-functional and system testing on 2 applications.</li>
+        <li>Tested Smash QA AZ, an agriculture app for palm oil plantation workers, built for client PT. Socfin Indonesia.</li>
+        <li>Tested the employee attendance app used internally at PT. Xtend Indonesia.</li>
+        <li>Designed test scenarios and test cases, and documented the results.</li>
+        <li>Reported and tracked bugs through bug reports and defect tracking.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="item">
+    <div class="when">PSI course project</div>
+    <div>
+      <h3>HKBP Sigumpar Website</h3>
+      <p class="sub">Bug tester</p>
+      <ul><li>Tested the website with Katalon as the designated bug tester.</li><li>Recorded every bug found in a spreadsheet as bug documentation.</li></ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="when">PPW course project</div>
+    <div>
+      <h3>Sumatransport Website</h3>
+      <p class="sub">Bug tester</p>
+      <ul><li>Tested the website with Katalon as the designated bug tester.</li><li>Recorded every bug found in a spreadsheet as bug documentation.</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="stack">
+    <div><h3>Testing</h3><p>Manual, functional, non-functional and system testing</p></div>
+    <div><h3>Test management</h3><p>Test scenarios and cases, bug reporting, defect tracking, documentation</p></div>
+    <div><h3>Technical</h3><p>SQL, Git / GitHub</p></div>
+    <div><h3>Soft skills</h3><p>Analytical thinking, problem solving, communication</p></div>
+  </div>
+  <p style="margin-top:1.5rem"><strong>Tools</strong><br>
+  <span class="tag">Jira</span><span class="tag">Postman</span><span class="tag">Katalon</span><span class="tag">Microsoft Excel</span><span class="tag">Google Sheets</span></p>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education and more</h2>
+  <div class="item">
+    <div class="when">2022 – 2026</div>
+    <div><h3>Bachelor of Information Systems</h3><p class="sub">Institut Teknologi Del</p></div>
+  </div>
+  <div class="item">
+    <div class="when">Certifications</div>
+    <div><ul><li>SQL (Advanced), HackerRank, September 2026</li><li>Intro to Machine Learning, Kaggle, February 2026</li></ul></div>
+  </div>
+  <div class="item">
+    <div class="when">Organizations</div>
+    <div><ul><li>Secretary, Department of Order and Discipline, Student Executive Board (BEM), August 2024 – June 2025</li><li>Member, Information Systems Student Association, 2022 – 2026</li></ul></div>
+  </div>
+  <div class="item">
+    <div class="when">Languages</div>
+    <div><ul><li>Indonesian: advanced</li><li>English: intermediate, TOEFL ITP 480</li></ul></div>
+  </div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <h2 style="color:var(--ink);font-size:1.6rem;margin-bottom:.8rem">Let's talk</h2>
+  <p>Based in Kab. Tangerang, Banten, Indonesia. Open to junior and manual QA roles.</p>
+  <p><a href="mailto:bryanaja92@gmail.com">bryanaja92@gmail.com</a><a href="tel:+6288219780977">+62 882-1978-0977</a><a href="https://www.linkedin.com/in/bryan-evans-simamora-823133245" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/bryanvans" target="_blank" rel="noopener">GitHub</a></p>
+</div></footer>
+</body>
+</html>
